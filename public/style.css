@@ -1,0 +1,480 @@
+*{
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bold;
+
+
+
+    
+}
+
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+/* ---------------NAV-------------- */
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 10vh;
+    background-color: #ffffff80;
+    width: 100%;
+    top: 0;
+    transition: 0.8s;
+    color: black;
+    z-index: 99;
+}
+
+#chabitoNav {
+    height: 50%;
+    margin: 10px;
+}
+
+/* Desktop nav */
+#desktopNav {
+    display: flex;
+    align-items: center;
+}
+
+#desktopNavItems {
+    display: flex; 
+    justify-content: space-around;
+}
+#desktopNavItems li {
+    font-size: large;
+}
+
+
+/* Mobile nav */
+#menu-logo, #sideNav {
+    display: none;
+}
+
+
+
+#sideNav{
+    position: fixed;
+    top: 0;
+    right: -260px;
+    height: 100%;
+    width: 260px;
+    z-index: 999;
+    transition: 0.5s;
+    background: rgb(255,255,255);
+    background: linear-gradient(165deg, rgba(255,255,255,1) 0%, rgba(245,236,252,1) 52%, rgba(228,202,249,1) 100%);
+}
+
+#sideNavItems {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    overflow: auto;
+}
+
+
+#sideNavItems li {
+    height: 50px;
+    margin: 10px;
+    font-size: 20px; 
+}
+
+
+#menu-logo, #menu-close-logo {
+    height: 20px;
+    margin: 5%;
+    opacity: 0.6;
+}
+
+
+#opacityDiv{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: white;
+    transition: 0.2s;
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+ul{
+    list-style-type: none;
+}
+
+/* ----------TERMINA NAV------------- */
+
+#title{
+    height: 100vh;
+    background-image: url("images/background1.jpg");
+    background-repeat: no-repeat;
+    background-position: 80% 100%;
+    background-size: cover;
+}
+
+#chabitoLogo {
+    height: 50%;
+}
+
+#chabitoTitle {
+    height: 20%;
+}
+
+#section-1, #section-2{
+    height: 100vh;
+}
+
+#section-1 > div, #section-2 > div, #section-3 > div{
+    height: 50%;
+}
+
+.section {
+    opacity: 0;
+}
+
+#quienesSomosContainer, #comoHacemosContainer, #queHacemosContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#quienesSomosContainer div, #comoHacemosContainer div{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10% 0;
+}
+
+#comoHacemosContainer div {
+    height: 30%;
+}
+
+#quienesSomosContainer p, #comoHacemosContainer p {
+    display: block;
+    padding: 0;
+}
+
+#mvvContainer, #mcaContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    
+}
+
+#mvvContainer div, #mcaContainer div {
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 25%;
+    padding: 1% 0;
+}
+
+
+#section-4 div{
+    padding: 0;
+}
+
+#telephone {
+    font-size: 100%;
+}
+
+#telephone img {
+    height: 30px;
+}
+
+
+p{
+    display: inline;  
+    font-size: small;  
+}
+
+h2{
+    font-size: xx-large;
+    padding-bottom: 2vh;
+    font-weight: bolder;
+}
+
+h3{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.section div {
+    height: 100%;
+    padding-top: 4vh;
+}
+
+.navButton{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.navButton:hover{
+    opacity: 1;
+    transition: 0.5ms;
+}
+
+.bgOne{
+    background: rgb(117,67,199);
+    background: linear-gradient(162deg, rgba(117,67,199,1) 0%, rgba(255,252,203,1) 100%);
+}
+
+.bgTwo{
+    background: rgb(255,252,203);
+    background: linear-gradient(162deg, rgba(255,252,203,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.bgThree{
+    background: rgb(255,252,193);
+background: linear-gradient(162deg, rgba(255,252,193,1) 19%, rgba(203,161,210,1) 100%);
+}
+
+.bgFour{
+    background: rgb(247,223,145);
+background: linear-gradient(162deg, rgba(247,223,145,1) 0%, rgba(250,248,212,1) 100%);
+}
+
+
+.bgFive{
+    background: rgb(255,252,193);
+background: linear-gradient(333deg, rgba(255,252,193,1) 0%, rgba(161,164,210,1) 100%);
+}
+
+.bgSix{
+        background: rgb(255,252,203);
+    background: linear-gradient(162deg, rgba(255,252,203,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+
+.bgSeven{
+    background: rgb(117,67,199);
+    background: linear-gradient(348deg, rgba(117,67,199,1) 0%, rgba(255,252,203,1) 100%);
+}
+
+footer{
+    height: 8vh ;
+}
+
+footer strong{
+    font-weight: bolder;
+    color: black;
+    padding: 0px 1vw;
+}
+
+footer p{
+    margin-bottom: 0px;
+}
+
+#section-3 {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-reveal {
+    animation: fadeAndSlide 0.7s ease-in-out forwards;
+}
+.owl-dots {
+    height: 10%!important;
+}
+
+.owl-dots button {
+    outline: none;
+}
+
+.owl-carousel span{ 
+    background: rgba(203,161,210,1) !important; /* color de circulos */
+}
+
+.owl-theme .owl-dots .owl-dot.active span,.owl-dot:focus span, .owl-dot:hover span, .owl-dot:active span{
+    background: rgb(117,67,199) !important; /* color de circulo activo */
+}
+
+
+
+@keyframes fadeAndSlide {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#map {
+    width: 70%;
+}
+
+#section-3 div{
+    padding: 0;
+}
+
+a img{
+    height: 60%;
+    width: 60%;
+    transition: 0.3s;
+    filter: grayscale(80%);
+}
+
+
+a :hover{
+    filter: grayscale(0%);
+    transition: 0.3s;
+}
+
+
+
+/* Media Querys */
+
+@media only screen and (max-width: 800px){
+    #menu-logo, #sideNav {
+        display: block;
+    }
+
+    #desktopNav {
+        display: none;
+    }
+
+    nav {
+        height: 10vh;
+    }
+
+    #chabitoNav {
+        height: 50%;
+    }
+
+    #chabitoLogo {
+        height: 40%;
+    }
+    
+    #chabitoTitle {
+        height: 10%;
+    }
+
+    #section-1, #section-2{
+        height: auto;
+    }
+    
+    #section-1 > div, #section-2 > div, #section-3 > div{
+        height: auto;
+    }
+    
+    
+    #mvvContainer, #mcaContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10% 0;
+        height: 50%;
+        width: 80%;
+    }
+
+    #mcaContainer {
+        padding: 0;
+    }
+    
+    #mvvContainer div, #mcaContainer div {
+        height: 75%;
+        width: 80%;
+    }
+
+    #mcaContainer div {
+        padding: 5% 0;
+    }
+
+    #queHacemosContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 0;
+    }
+    #section-3 {
+        height: 35vh;
+    }
+
+    #map{
+        width: 100%;
+    }
+
+    #telephone {
+        font-size: 100%;
+    }
+    
+    #telephone img {
+        height: 30px;
+    }
+
+
+    footer  {
+        height: 5vh;
+    }
+
+/* Fix por caroussel mobile */
+    .section div{ 
+        height: auto;
+    }
+
+    #section-3 h2{
+        padding: 0;
+    }
+
+/* Termina fix por caroussel mobile */
+
+    p{
+        display: inline;  
+        font-size: x-small;  
+    }
+    
+    h2{
+        font-size: x-large;
+        padding-bottom: 2vh;
+        font-weight: bolder;
+    }
+    
+    h3{
+        font-size: large;
+        font-weight: bolder;
+    }
+}
+
+.pulse{
+    border-radius: 50%;
+    cursor: pointer;
+    animation: shadow-pulse 1s infinite;
+}
+
+
+@keyframes shadow-pulse
+{
+     0% {
+          box-shadow: 0 0 0 0px rgb(117,67,199, 0.3);
+     }
+     100% {
+          box-shadow: 0 0 0 35px rgb(117,67,199, 0);
+     }
+}
+
+#phoneNumber{
+    text-decoration: none;
+    background: none;
+    border: none;
+    outline: none;
+    width: 13ch; /* cantidad de caracteres */
+}

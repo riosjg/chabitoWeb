@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./owl.carousel.css">
+    <link rel="stylesheet" href="./owl.carousel.min.css">
+    <link rel="stylesheet" href="./owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <title>El Chabito Merendero</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <img id="chabitoNav"src="./images/el-chabito-logo.png" alt="el chabito logo">
+        <!-- Desktop Nav -->
+        <div id="desktopNav" class="col-8">
+            <ul id="desktopNavItems" class="w-100 m-0">
+                <li class="navButton" onclick="ScrollElement('title')">Inicio</li>
+                <li class="navButton" onclick="ScrollElement('section-1')">¿Quienes somos?</li>
+                <li class="navButton" onclick="ScrollElement('section-2')">¿Qué hacemos?</li>
+                <li class="navButton" onclick="ScrollElement('section-3')">Galeria</li>
+                <li class="navButton" onclick="ScrollElement('section-4')">Contacto</li>
+            </ul>
+        </div>
+
+        <div onclick="closeNav()" id="opacityDiv"></div>
+
+        <!-- Mobile Nav -->
+        <img id="menu-logo" onclick="openNav()" src="./images/mobile-menu-icon.png" alt="menu icon">
+        <div id="sideNav">
+            <img id="menu-close-logo" onclick="closeNav()" src="./images/mobile-menu-close-icon.png"
+                alt="close menu icon">
+            <ul id="sideNavItems">
+                <li class="navButton" onclick="ScrollElement('title')">Inicio</li>
+                <li class="navButton" onclick="ScrollElement('section-1')">¿Quienes somos?</li>
+                <li class="navButton" onclick="ScrollElement('section-2')">¿Qué hacemos?</li>
+                <li class="navButton" onclick="ScrollElement('section-3')">Galeria</li>
+                <li class="navButton" onclick="ScrollElement('section-4')">Contacto</li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <main id="main bgFour">
+        <div id="title" class="d-flex flex-column justify-content-center align-items-center">
+            <img id="chabitoLogo"src="./images/logo.png" alt="el chabito logo">
+            <img id="chabitoTitle" src="./images/el-chabito-logo.png" alt="el chabito title">
+        </div>
+        <!-- QUIENES SOMOS? -->
+        <section id="section-1" class="d-flex text-center align-items-center flex-column">
+            <div id="quienesSomosContainer" class="section w-100 bgOne align-items-center">
+                <div>
+                    <h2>¿QUIÉNES SOMOS?</h2>
+                    <span>
+                        <p>Abrimos nuestras puertas en septiembre 2018, por iniciativa de Mercedes, una vecina del barrio, quien montó el merendero en su propia casa, situado en Troncos del Talar, localidad del partido de Tigre.</p>
+                        <p>Recibimos a más de 150 chicos, quienes vienen a compartir la merienda con nosotros y se llevan la cena a sus casas.</p>
+                        <p>También, realizamos otras actividades, tales como: apoyo escolar y actividades lúdicas y recreativas, ya sea: manualidades, talleres, festejos de cumpleaños y eventos especiales, entre otros. Para ello, contamos con la colaboración de auxiliares en el merendero y otros voluntarios.</p>
+                    </span>
+                </div>
+            </div>
+
+            <div id="mvvContainer" class="section bgTwo w-100">
+                <div>
+                    <h2>MISIÓN</h2>
+                    <p>
+                        Nuestro objetivo principal es poder terminar la estructura edilicia del merendero, la cual, hoy
+                        en
+                        día,
+                        es bastante precaria. Esto nos permitiría asistir a un mayor número de chicos, brindar los
+                        talleres
+                        en
+                        un ámbito acorde y acondicionado, cumpliendo con los estándares de seguridad necesarios para
+                        cuidar
+                        su
+                        integridad física.
+                    </p>
+                </div>
+                <div>
+                    <h2>VISIÓN</h2>
+                    <p>
+                        Apuntamos a que los chicos no dependan de la merienda y cena del merendero, sino que puedan
+                        recurrir a
+                        este espacio para desarrollar actividades de otra índole, ya sea: recreativas, escolares y de
+                        apoyo
+                        emocional.
+                </div>
+                <div>
+                    <h2>VALORES</h2>
+                    <p>
+                        En conjunto con las actividades que se desarrollan a diario, trabajamos en fomentar los valores
+                        del
+                        respeto hacia el otro, los buenos modales, la no violencia y el compañerismo. La mejor forma de
+                        que
+                        los
+                        chicos no terminen en la calle es por medio de la educación, el apoyo emocional y brindándoles
+                        mucho
+                        amor.
+                </div>
+            </div>
+        </section>
+
+        <!-- QUE HACEMOS / COMO HACEMOS -->
+        <section id="section-2" class="section-2 d-flex text-center align-items-center flex-column">
+            <div id="queHacemosContainer" class="section bgThree">
+                <h2>¿QUÉ HACEMOS?</h2>
+                <div id="mcaContainer">
+                    <div class="col-sm-3 col-lg-3">
+                        <h3>Merienda</h3>
+                        <p>+ de 80 chicos asisten al servicio de merienda</p>
+                    </div>
+                    <div class="col-sm-3 col-lg-3">
+                        <h3>Cena</h3>
+                        <p>+ de 150 personas reciben la cena</p>
+                    </div>
+                    <div class="col-sm-3 col-lg-3">
+                        <h3>Apoyo escolar y actividades recreativas</h3>
+                        <p>+ de 80 chicos participan de las diferentes actividades</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="comoHacemosContainer" class="section align-items-center bgFour">
+                <div>
+                <h2>¿CÓMO LO HACEMOS?</h2>
+                    <span>
+                        <p>
+                        Obtenemos recursos económicos a través de ferias, rifas, bingos y recibimos donaciones.
+                        Sin embargo, no nos alcanza para cubrir la totalidad de las necesidades que actualmente presenta el
+                        merendero.
+                        </p>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERIA -->
+        <section id="section-3" class="section section-3 bgFive">
+            <h2>Galería</h2>
+            <div id="slide" class="owl-carousel owl-theme bgFive">
+                <div> <img src="./images/img1.jpg" alt=""> </div>
+                <div> <img src="./images/img2.jpg" alt=""> </div>
+                <div> <img src="./images/img3.jpg" alt=""> </div>
+                <div> <img src="./images/img4.jpg" alt=""> </div>
+                <div> <img src="./images/img5.jpg" alt=""> </div>
+                <div> <img src="./images/img6.jpg" alt=""> </div>
+                <div> <img src="./images/img7.jpg" alt=""> </div>
+                <div> <img src="./images/img8.jpg" alt=""> </div>
+                <div> <img src="./images/img9.jpg" alt=""> </div>
+            </div>
+        </section>
+
+
+        <!-- CONTACTO -->
+        <section id="section-4" class="section section-4 p-0">
+            <div class="d-flex  flex-column align-items-center p-5 bgSix">
+                <h2>¿Dónde estamos?</h2>
+                <iframe id="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2326.3025710841334!2d-58.60111990178633!3d-34.454976175185045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca51dfe81f773%3A0x2d0e1f9f2c7a47e5!2sLe%C3%B3nardo%20Da%20Vinci%201719%2C%20Los%20Troncos%20del%20Talar%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1585280493377!5m2!1ses-419!2sar"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"></iframe>
+            </div>
+
+            <div id="section-contact" class="section d-flex flex-column align-items-center p-5 bg-light bgSeven">
+                <h2>Contacto</h2>
+
+                <div class="d-flex flex-column align-items-center">
+                    <div id="telephone">
+                        <span onclick="copyToClipboard()" class="pulse"><img src="./images/telephone.png" alt="telephone icon"></span>
+                        <!-- <strong>+54 (11) 6210-8378</strong> -->
+                        <input id="phoneNumber" value="+54 (11) 6210-8378" readonly></input>
+                    </div>
+                    <div class="w-100 d-flex justify-content-around mt-5">
+                        <div class="col-3 d-flex flex-column justify-content-center p-0">
+                            <a href="https://www.instagram.com/el_chabito_comedor_y_merendero/" target="blank"
+                                class="d-flex flex-column align-items-center">
+                                <img src="./images/instagram-logo.png" alt="instagram logo">
+                            </a>
+                        </div>
+                        <div class="col-3 d-flex flex-column justify-content-center p-0">
+                            <a href="https://www.facebook.com/mariela.troyas.9" target="blank"
+                                class="d-flex flex-column align-items-center">
+                                <img src="./images/facebook-logo.png" alt="facebook logo">
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="d-flex justify-content-center align-items-center">
+        <p>© Copyright<strong>El Chabito Merendero</strong> Todos los derechos reservados.</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="owl.carousel.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.13.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+
+</html>
